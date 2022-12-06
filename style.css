@@ -8,15 +8,15 @@ body {
   font-family: cursive;
 }
 
-section {
+/* section {
   margin-top: 80px;
-}
+} */
 
 h1 {
   text-align: center;
   color: white;
   font-size: 50px;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
 }
 
 .wrapper {
@@ -57,4 +57,67 @@ button {
 .input-container button:hover {
   color: #fff;
   background: #ff5762;
+}
+
+.todo-container {
+  /* margin-top: 40px; */
+  padding: 0px;
+}
+
+.todo-container .todo {
+  margin: 0 auto;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.todo-container .todo.completed {
+  width: 90%;
+  text-decoration: line-through;
+  color: #7e7e7e;
+  opacity: 0.7;
+}
+
+.todo-container button {
+  padding: 16px;
+  flex: 1;
+  margin: 0;
+}
+
+.todo-container .todo-check {
+  color: green;
+  background: white;
+  border-left: 2px solid white;
+  font-size: 16px;
+}
+
+.todo-container .todo-check:hover {
+  color: white;
+  background: green;
+  cursor: pointer;
+}
+
+.todo-container .todo-delete {
+  color: #ff5762;
+  background: white;
+  font-size: 16px;
+  border-left: 2px solid #eee;
+  border-bottom-right-radius: 5px;
+}
+
+.todo-container .todo-delete:hover {
+  color: #fff;
+  background: #ff5762;
+  cursor: pointer;
+}
+
+.todo-container .todo li {
+  flex: 10;
+  padding: 16px;
+  list-style-type: none;
+  margin: 0;
+  line-height: 1.5;
 }
